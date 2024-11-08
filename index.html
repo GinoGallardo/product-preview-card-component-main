@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Fraunces:wght@700&display=swap" rel="stylesheet">
@@ -12,24 +12,26 @@
   
   <title>Frontend Mentor | Product preview card component</title>
 </head>
-<body class="bg-cream m-0 p-0 w-full h-screen md:flex md:items-center md:justify-center">
-  <section class="w-11/12 flex flex-col mx-auto mt-6 bg-white md:w-5/12  md:flex-row md:items-center md:justify-center md:rounded-xl md:mt-0">
-    <img class="rounded-t-xl md:hidden" src="./images/image-product-mobile.jpg" alt="Perfume Gabrielle">
-    <img class="hidden md:flex md:w-1/2 md:rounded-s-xl" src="./images/image-product-desktop.jpg" alt="Perfume Gabrielle">
-    <article class="p-4 flex flex-col items-start justify-center space-y-4 md:w-1/2 md:px-6 ">
-      <span class="text-sm font-montserrat uppercase  tracking-widest text-darkGrayishBlue font-extralight ">Perfume</span>
-      <h1 class="text-3xl font-fraunces tracking-wider md:text-5xl">Gabrielle Essence Eau De Parfum</h1>
-      <p class="text-base text-darkGrayishBlue font-extralight font-montserrat tracking-wides md:pr-6 ">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+<body class="bg-cream font-montserrat h-screen md:flex md:items-center sm:justify-center">
+  <main class="w-[375px] h-[612px] rounded-xl overflow-hidden mt-16 mx-auto bg-white sm:w-[600px] sm:h-[450px] sm:flex sm:mt-[175px] sm-mx-auto">
+    <section class="sm:w-[300px]">
+      <img class="w-full sm:hidden" src="./images/image-product-mobile.jpg" alt="Perfume Gabrielle">
+      <img class="hidden sm:flex " src="./images/image-product-desktop.jpg" alt="Perfume Gabrielle">
+    </section>
+    <section class="p-4 flex flex-col items-start justify-center space-y-4 sm:w-[300px]">
+      <p class="text-sm font-montserrat uppercase  tracking-widest text-darkGrayishBlue sm:mt-8">Perfume</p>
+      <h1 class="text-3xl font-fraunces text-veryDarkBlue leading-9 sm:text-4xl">Gabrielle Essence Eau De Parfum</h1>
+      <p class="text-sm text-darkGrayishBlue leading-6 font-montserrat">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.</p>
-      <div role="text" class="flex flex-row items-center space-x-5 ">
+      <div role="text" class="flex items-center space-x-5 ">
         <span class="text-3xl font-fraunces text-darkCyan">$149.99</span>
-        <span class="font-montserrat line-through">$169.99</span>
+        <span class="font-montserrat line-through text-darkGrayishBlue">$169.99</span>
       </div>
-      <button class="w-full flex items-center justify-center py-4  bg-darkCyan text-center hover:bg-hoverDarckCyan text-white font-bold rounded-xl">
+      <button class="w-full flex items-center justify-center py-4  bg-darkCyan text-center hover:cursor-pointer hover:bg-hoverDarckCyan text-white font-bold rounded-xl">
         <img class="relative text-center pr-3 " src="./images/icon-cart.svg" alt="">
         Add to Cart
       </button>
-    </article>
-  </section>
+    </section>
+  </main>
 </body>
 </html>
